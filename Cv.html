@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>我的學習紀錄</title>
+</head>
+
+
+<style>
+    .text-color {
+        color: cornsilk;
+    }
+
+    .hover-color {
+        color: cornsilk;
+    }
+
+    .hover-color:hover {
+        font-weight: 700;
+    }
+
+    .photo-1 {
+        background-image: url(images/airfly.jpg);
+        background-size: cover;
+        background-position: center, center;
+    }
+
+    .photo-2 {
+        background-image: url(images/bg_index.png);
+        background-size: cover;
+        background-position: center, center;
+    }
+
+    .photo-3 {
+        background-image: url(images/bg_QA.png);
+        background-size: cover;
+        background-position: center, center;
+    }
+
+    .photo-4 {
+        background-image: url(images/bg_course.png);
+        background-size: cover;
+        background-position: center, center;
+    }
+    .photo-5 {
+        background-image: url(images/phone.jpg);
+        background-size: cover;
+        background-position: center, center;
+    }
+
+    .photo-6 {
+        background-image: url(images/all-we-have-is-now.jpg);
+        background-size: cover;
+        background-position: center, center;
+    }
+
+
+    .all-bg {
+        background-image: url(images/internet-technology-computer-pc-193349.jpg);
+        background-size: cover;
+        background-position: center, center;
+        background-attachment: fixed;
+    }
+    p{
+        font-weight: 650;
+    }
+
+
+    .time-line {
+        position: relative;
+    }
+
+    .time-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: rgb(46, 158, 167);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .time-line-pointer {
+        position: relative;
+    }
+
+    .time-line-pointer::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        border: 4px solid rgb(29, 134, 47);
+    }
+
+
+    @media (max-width: 576px) {
+
+        .time-line::after,
+        .time-line-pointer::after {
+            display: none;
+        }
+        .photo-1,.photo-2,.photo-3,.photo-4,.photo-5,.photo-6{
+            height: 220px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-3" href="#"><i class="fas fa-frog"></i>
+            Patrick Quan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3 active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        作品集
+                    </a>
+                    <div class="dropdown-menu bg-info text-color" aria-labelledby="navbarDropdown">
+                        <h5 class="text-center">2020/7月</h5>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item hover-color" href="https://patricegua.github.io/2020-7-27Boot/"
+                            target="_blank"><i class="fab fa-blogger-b"></i>
+                            部落格版型-練習</a>
+                        <a class="dropdown-item hover-color"
+                            href="https://patricegua.github.io/2020-7-27Boot/index-2.html" target="_blank"><i
+                                class="fas fa-images"></i>
+                            形象首頁版型-練習</a>
+                        <a class="dropdown-item hover-color"
+                            href="https://patricegua.github.io/2020-7-27Boot/dashboard-hw.html" target="_blank"><i
+                                class="fas fa-network-wired"></i>
+                            後臺控制面板-練習</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled" href="#">未來學習待補作品</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">學習進度</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">自我介紹<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid all-bg pb-5">
+        <h1 class="text-center text-white">Learning timeline</h1>
+        <div class="container my-5 text-white">
+            <div class="time-line">
+                <div class="row time-line-pointer mb-5">
+                    <div class="col-sm-6 photo-1 rounded-lg">
+                    </div>
+                    <div class="col-sm-6 ">
+                        <h3 class="my-3">2020.6.15</h3>
+                        <p>為了轉職開始大量搜尋程式資訊</p>
+                        <p>我一直主要是在做餐飲服務業，旅外回國，因緣際會，因疫情，職場環境影響改變，讓我有了想為自己奮鬥一次的念頭，決定轉職。</p>
+                        <p>於網路上找到了CMoney戰鬥營，於6/21從而參加CMY戰鬥營-說明會，並開始準備考試項目JAVA踏入自學程式</p>
+                    </div>
+                </div>
+                <div class="row flex-sm-row-reverse time-line-pointer mb-5">
+                    <div class="col-sm-6 photo-2 rounded-lg pt-2">
+                        6/15~7/5  JAVA持續學習
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="my-3">2020.7.5</h3>
+                        <p>報名參加第七屆戰鬥營</p>
+                        <p>從毫無程式經驗開始試學程式語言，說真的自學並不簡單，除了靠自律規劃進度還要練習自己解決問題</p>
+                        <p>但如果這樣都做不到，那可能這個領域不是我想要的</p>
+                    </div>
+                </div>
+                <div class="row time-line-pointer mb-5">
+                    <div class="col-sm-6 photo-3 rounded-lg d-flex  align-items-center">
+                      <h3 class="text-center"><i class="fas fa-question"></i>
+                        學習挫折</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="my-3">2020.7.18</h3>
+                        <p>CMY-線上考試</p>
+                        <p>從零到下載開發環境NetBeans IDE，打出Hello world，甚至開始解題，試著解開線上練習題目，並參加每一次的模擬練習，研究看著一堆看不懂的code，也許我能解出的題目並不多，但只能拚拚看了</p>
+                        <p>很沒自信，考試自覺未能達標...</p>
+                    </div>
+                </div>
+                <div class="row flex-sm-row-reverse time-line-pointer mb-5">
+                    <div class="col-sm-6 photo-4 rounded-lg pt-2">
+                        Html&Css 學習
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="my-3">2020.7.19</h3>
+                        <p>假如未能錄取又如何？但這不是你的目標嗎？</p>
+                        <p>既然下了決心要從事這行，也應該要嘗試更多可能，在接觸程式領域後，也用了許多線上資源，例如:Udemy丶六角學院丶youtube看了許多影片...等等</p>
+                        <p>中間因為網頁在自學上比較有互動過程，進而開始接觸易學難精的前端工程，也假裝模擬進去了戰鬥營的學習時間，一天9-10個小時學習，看自身反應如何</p>
+                    </div>
+                </div>
+                <div class="row time-line-pointer mb-5">
+                    <div class="col-sm-6 photo-5 rounded-lg pt-2">
+                       默默的自學
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="my-3">2020.7.27 面試電話！</h3>
+                        <p>以為戰鬥營無緣就這樣了，無下文的時候，接到CMY來電確認，是否有收到面試通知郵件，原來是Yahoo擋住郵件問題</p>
+                        <p>雖然只是獲得二面機會，但我還是很開心，我可能不比別人聰明，也正在努力的道路上，即便最終我還是未能成為戰鬥營的訓練生，但我還是會繼續累積程式相關學習</p>
+                        <p>謝謝CMY給我面試機會</p>
+                    </div>
+                </div>
+                <div class="row flex-sm-row-reverse time-line-pointer">
+                    <div class="col-sm-6 photo-6 rounded-lg pt-2">
+                        展現額外作品
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="my-3">2020.7.30</h3>
+                        <p>既然給了機會就要爭取！</p>
+                        <p>這是我在家自學半個月，運用基礎Html&CSS和Bootstrap4網格結構，製成的網頁畫面，再用Github上傳，並且上方連結中，記錄著我練習的作品</p>
+                        <p>也許沒有很酷炫，但這是我目前僅有的</p>
+                        <p>未來也會持續增加並記錄我學習的作品和各種過程，直到達成目標-成功就業</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <footer class="bg-secondary py-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <small>
+                    &copy;copyright 2020 Pa的程式學習
+                </small>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/patrice.gua/" title="FaceBook" class="text-color"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/patrice_gua/" title="instagram" class="text-color"><i class="fab fa-instagram-square"></i></a>
+                <a href="#" class="text-color" title="尚未提供"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+  
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
