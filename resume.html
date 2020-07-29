@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>自我介紹</title>
+</head>
+
+<style>
+    * {
+        list-style: none;
+    }
+
+    .photo-1 img {
+        border-radius: 50%;
+    }
+
+    .top-line {
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.795);
+    }
+
+    .line-gray {
+        height: 0.5px;
+        background-color: rgba(148, 141, 141, 0.664);
+    }
+
+    .mid-bg-color {
+        background-color: rgba(68, 150, 168, 0.849);
+        height: 200px;
+    }
+
+
+    h5 span {
+        font-size: 14px;
+    }
+
+    .edu-line {
+        position: relative;
+    }
+
+    .edu-line::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 5px;
+        left: 26px;
+        width: 0.1px;
+        background-color: rgb(111, 115, 116, 0.6);
+    }
+
+    .edu-point {
+        position: relative;
+    }
+
+    .edu-point::before {
+        content: "";
+        position: absolute;
+        height: 11px;
+        width: 11px;
+        border-radius: 50%;
+        left: -19px;
+        top: 8px;
+        background-color: rgb(20, 99, 99);
+        z-index: 2;
+    }
+
+    .name-point {
+        position: relative;
+    }
+
+    .name-point::before {
+        content: "";
+        position: absolute;
+        height: 11px;
+        width: 11px;
+        border-radius: 50%;
+        left: -19px;
+        top: 8px;
+        background-color: rgb(20, 99, 99);
+    }
+
+    .mid-bg-color {
+        position: relative;
+    }
+
+    .mid-skill {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -55px;
+    }
+
+    .skill-top-line {
+        height: 0.1px;
+        background-color: #fff;
+        width: 70%;
+    }
+
+    .skill-inside-line {
+        position: relative;
+    }
+
+    .skill-inside-line::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 35%;
+        width: 0.1px;
+        background-color: #fff;
+    }
+
+    .skill-inside-line {
+        width: 40%;
+        margin: auto;
+    }
+
+    .push-top {
+        margin-top: 150px;
+    }
+
+    .skill-inside-text {
+        margin-left: 40%;
+        width: 50%;
+    }
+
+    @media (max-width: 576px) {
+
+
+        .skill-inside-line,
+        .skill-inside-text {
+            width: 100%;
+        }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-3" href="#"><i class="fas fa-frog"></i>
+            Patrick Quan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3 active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        作品集
+                    </a>
+                    <div class="dropdown-menu bg-info text-color" aria-labelledby="navbarDropdown">
+                        <h5 class="text-center">2020/7月</h5>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item hover-color" href="https://patricegua.github.io/2020-7-27Boot/"
+                            target="_blank"><i class="fab fa-blogger-b"></i>
+                            部落格版型-練習</a>
+                        <a class="dropdown-item hover-color"
+                            href="https://patricegua.github.io/2020-7-27Boot/index-2.html" target="_blank"><i
+                                class="fas fa-images"></i>
+                            形象首頁版型-練習</a>
+                        <a class="dropdown-item hover-color"
+                            href="https://patricegua.github.io/2020-7-27Boot/dashboard-hw.html" target="_blank"><i
+                                class="fas fa-network-wired"></i>
+                            後臺控制面板-練習</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled" href="#">未來學習待補作品</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="https://patricegua.github.io/code0615/Cv.html">學習進度</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="https://patricegua.github.io/code0615/Rs.html#">自我介紹<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <h1>Patrick Quan</h1>
+        <div class="top-line my-2 mb-5"></div>
+        <div class="photo-1 mb-4">
+            <img src="images/myself.jpg" alt="" width="150">
+        </div>
+        <h5 class="font-weight-bolder">個人資料 <span class="font-italic text-danger">PROFILE</span></h5>
+        <div class="line-gray my-2"></div>
+        <ul>
+            <li>
+                <p class="mb-2 name-point">全冠維</p>
+                <p class="">1989－<br>
+                    餐飲服務業 / 廚師 / 自學工程師</p>
+            </li>
+            <li>探索程式語言新人 / 立志轉職工程師<br>
+                相關經驗 : 無</li>
+            <li>
+                成果作品 : 位於上方連結
+            </li>
+        </ul>
+        <br>
+        <h5 class="font-weight-bolder">學歷 <span class="font-italic text-danger">EDUCATION</span></h5>
+        <div class="line-gray my-2 "></div>
+        <ul class="edu-line">
+            <li class="edu-point mb-4">國立台北商業專科</li>
+            <li class="edu-point">華江高中</li>
+        </ul>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <div class="mid-bg-color">
+        <div class="container mid-skill bg-secondary text-white">
+            <h5 class="text-center mt-4 font-weight-bold">技能</h5>
+            <div class="skill-top-line m-auto"></div>
+            <div class="skill-inside-line ">
+                <p class="skill-inside-text mt-3">HTML & CSS</p>
+                <p class="skill-inside-text">RWD / 響應式</p>
+                <p class="skill-inside-text">BOOTSTRAP4</p>
+                <p class="skill-inside-text">jQuery</p>
+                <p class="skill-inside-text">JAVA</p>
+                <p class="skill-inside-text mb-3">語言 : 中文丶英文</p>
+            </div>
+        </div>
+    </div>
+    <div class="push-top"></div>
+    <div class="container mt-5">
+        <h5 class="font-weight-bolder">工作經歷 <span class="font-italic text-danger">WORK EXPERIENCE</span></h5>
+        <div class="line-gray my-2"></div>
+        <ul>
+            <li>XXX學院實習生</li>
+        </ul>
+    </div>
+    <footer class="bg-secondary py-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <small>
+                    &copy;copyright 2020 Pa的程式學習
+                </small>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/patrice.gua/" title="FaceBook" class="text-color"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/patrice_gua/" title="instagram" class="text-color"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="#" class="text-color" title="尚未提供"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
